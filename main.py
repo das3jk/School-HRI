@@ -34,17 +34,70 @@ names_of_employees = ["Silas"]
 
 guest_response_to_visitor_passes = ["yes", "no"]
 guest_response_to_questions = ["yes", "no"]
-guest_possible_questions = ["bathroom","entrance", "time", "Silas", "package", "lunch", "wifi password", "visitor passes", "phone"]
-responses_to_guests = {"bathroom": "the bathroom is around the corner",
-                       "entrance": "the entrance is behind you",
-                       "time": "the time is" + str(datetime.now().time()),
-                       "Silas": "Silas's office is around the corner",
-                       "package": "I can sign for your package here",
-                       "lunch": "lunch will be provided at 12:30",
-                       "wifi password": "the wifi password is I L O V E F R I E N D L Y", 
-                       "visitor passes" : "the visitor passes are right there",
-                       "phone": "the phone is over there"
+#guest_possible_questions = ["bathroom","entrance", "time", "Silas", "package", "lunch", "wifi password", "visitor passes", "phone"]
+#responses_to_guests = {"bathroom": "the bathroom is around the corner",
+#                       "entrance": "the entrance is behind you",
+ #                      "time": "the time is" + str(datetime.now().time()),
+  #                     "Silas": "Silas's office is around the corner",
+   #                    "package": "I can sign for your package here",
+    #                   "lunch": "lunch will be provided at 12:30",
+     #                  "wifi password": "the wifi password is I L O V E F R I E N D L Y", 
+      #                 "visitor passes" : "the visitor passes are right there",
+       #                "phone": "the phone is over there"
+#}
+
+# Derek
+
+current_time = datetime.datetime.now().time()
+
+formatted_time = current_time.strftime("%I:%M %p")  # Example: 12:30 PM -- Format the current time
+
+# Define possible questions guests might ask
+guest_possible_questions = [
+    "business hours",
+    "restroom",
+    "Wi-Fi",
+    "mechanical engineering department",
+    "parking",
+    "restaurants or hotels",
+    "professor availability",
+    "appointment with admissions services",
+    "application process",
+    "services offered by UVA School of Engineering",
+    "promotions or discounts",
+    "upcoming events",
+    "professor's email",
+    "event today",
+    "emergency procedures",
+    "nearest emergency exits",
+    "Chinese language assistance",
+    "other languages",
+    "Time
+]
+
+# Define responses to guests' questions
+responses_to_guests = {
+    "business hours": "Our business hours today is twelve thirty PM to two PM.",
+    "restroom": "The restroom is located down the hall to your left, next to the elevators.",
+    "Wi-Fi": "Yes, we provide complimentary Wi-Fi access. Please use UVA Guest Wifi.",
+    "mechanical engineering department": "The marketing department is located in the mechanical engineering building. The mechanical engineering building is further down Engineers’ Way. Take a left when exiting Rice Hall.",
+    "parking": "The closest visitor parking is available in the lot next to the football stadium.",
+    "restaurants or hotels": "Yes, there are several restaurants within walking distance. I recommend you try restaurants on the Corner, near the Rotunda.",
+    "professor availability": "Yes, he should be walking around the room.",
+    "appointment with admissions services": "Of course. Please see the UVA Engineering School website for more information.",
+    "application process": "You can apply to be an undergraduate student here between 1 August and 31 October through the Common Application, an online college application service.",
+    "services offered by UVA School of Engineering": "UVA School of Engineering is a center for undergraduate and graduate education as well as high-class education.",
+    "promotions or discounts": "No.",
+    "upcoming events": "For the most up-to-date information, please visit the UVA Engineering School website as well as one of the information booths regarding today’s event.",
+    "professor's email": "Professor Iqbal’s email address is tiqbal@virginia.edu.",
+    "event today": "Yes, today is the UVA School of Engineering open house.",
+    "emergency procedures": "In case of an emergency, please evacuate the building immediately using the nearest exit and assemble at the designated meeting point in the parking lot.",
+    "nearest emergency exits": "The nearest emergency exits are located towards the long side of the room. We also have exit signs posted throughout the building for your convenience.",
+    "Chinese language assistance": "Ni hao. Yes, we have staff members who speak Chinese. Would you like me to find someone to assist you?",
+    "other languages": "No, I am sorry, just English."
+    "Time": "The current time is " + formatted_time
 }
+#End Derek
 
 employee_responses_to_question = ["yes" "no"]
 
